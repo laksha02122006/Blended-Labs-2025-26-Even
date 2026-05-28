@@ -2,10 +2,9 @@
 
 ## Author
 
-* **Name**: ________________________________
-* **Register Number**: _____________________
-* **Date of Submission**: __________________
-
+* **Name**: V.B.Laksha
+* **Register Number**: 212224220051
+* **Date of Submission**: 28.05.2026
 ---
 
 ## Objective
@@ -96,35 +95,72 @@ Terminate the EC2 instance after completing the experiment to avoid unnecessary 
 
 ## Workflow (Student Explanation)
 
-(Write the steps you followed in your own words)
+First, I logged in to the AWS Management Console using my AWS account.
 
-1. ---
-2. ---
-3. ---
-4. ---
-5. ---
+I searched for EC2 in the services section and opened the EC2 Dashboard.
 
----
+I explored different sections like Instances, AMIs, Instance Types, Key Pairs, Security Groups, and Elastic IPs to understand their functions.
+
+I clicked on the “Launch Instance” button to create a new EC2 instance.
+
+I selected Amazon Linux 2 AMI as the operating system.
+
+I chose the t2.micro instance type because it is eligible for the AWS Free Tier.
+
+I entered a name for my instance to identify it easily.
+
+I created a new key pair, selected the PEM format, and downloaded it to my system.
+
+I configured the security group settings.
+
+I allowed SSH access on Port 22 only from my IP address.
+
+I allowed HTTP access on Port 80 from anywhere (0.0.0.0/0).
+
+I reviewed all the configurations and clicked on “Launch Instance.”
+
+After launching, I waited until the instance state changed to “Running.”
+
+I copied the public IP address of the instance from the EC2 dashboard.
+
+I opened the terminal and navigated to the folder where the key pair file was saved.
+
+I connected to the instance using the SSH command: ssh -i "keyname.pem" ec2-user@
+
+I successfully logged in to the Amazon Linux server.
+
+I went back to the EC2 console and selected the instance.
+
+I clicked on “Stop” and observed the instance state changing to “Stopped.”
+
+I clicked on “Start” and observed the state changing back to “Running.”
+
+I also performed the “Reboot” operation and noticed that the instance restarted.
+
+I opened the “Monitoring” tab to check CPU utilization and network metrics.
+
+I observed the status checks to ensure the instance was running properly.
+
+After completing the experiment, I selected the instance and clicked on “Terminate.”
+
+I confirmed the termination and observed that the instance state changed to “Terminated.”
 
 ## Output Screenshots (Attach 3)
 
 ### Screenshot 1: EC2 Dashboard / Instance List
 
-(Insert Screenshot Here)
+<img width="1920" height="1200" alt="Screenshot (56)" src="https://github.com/user-attachments/assets/c4ead32d-5bd9-478a-89aa-c77506ae21e9" />
 
----
 
 ### Screenshot 2: SSH Connection to Instance
 
-(Insert Screenshot Here)
+<img width="1264" height="834" alt="image" src="https://github.com/user-attachments/assets/b232762d-25e5-49c6-88e7-be150cc07415" />
 
----
+<img width="1920" height="1200" alt="Screenshot (59)" src="https://github.com/user-attachments/assets/a520cf38-d5e8-4f03-8cbf-ccae73774885" />
+
 
 ### Screenshot 3: Instance Monitoring / Status
-
-(Insert Screenshot Here)
-
----
+<img width="1265" height="871" alt="image" src="https://github.com/user-attachments/assets/b08ea128-ef13-4bda-8e1c-768e417e985a" />
 
 ## Result 
 
